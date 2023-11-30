@@ -5,11 +5,11 @@ import SearchScreen from './SearchScreen';
 import CartScreen from './CartScreen';
 import FavoritesScreen from './FavoritesScreen';
 import ProfileScreen from './ProfileScreen';
-import HomeIcon from './icons/HomeIcon';
-import SearchIcon from './icons/SearchIcon';
-import CartIcon from './icons/CartIcon';
-import FavoritesIcon from './icons/FavoritesIcon';
-import ProfileIcon from './icons/ProfileIcon';
+import HomeIcon from '../../../icons/HomeIcon';
+import SearchIcon from '../../../icons/SearchIcon';
+import CartIcon from '../../../icons/CartIcon';
+import FavoritesIcon from '../../../icons/FavoritesIcon';
+import ProfileIcon from '../../../icons/ProfileIcon';
 const Tab = createBottomTabNavigator();
 
 // TabBarIcon component

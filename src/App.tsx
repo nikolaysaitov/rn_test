@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import MyTabs from './MyTabs';
+import MyTabs from './components/pages/MyTabs';
 
 export default function App() {
   return (
