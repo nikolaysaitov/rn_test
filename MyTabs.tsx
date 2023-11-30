@@ -20,18 +20,23 @@ interface TabBarIconProps {
 }
 
 const TabBarIcon: React.FC<TabBarIconProps> = ({iconName, color, size}) => {
-  if (iconName === 'home') {
-    return <HomeIcon color={color} size={size} />;
-  } else if (iconName === 'search') {
-    return <SearchIcon color={color} size={size} />;
-  } else if (iconName === 'cart') {
-    return <CartIcon color={color} size={size} />;
-  } else if (iconName === 'heart') {
-    return <FavoritesIcon color={color} size={size} />;
-  } else if (iconName === 'person') {
-    return <ProfileIcon color={color} size={size} />;
+  const getIcon = (iconComponent: React.FC<{color: string; size: number}>) =>
+    React.createElement(iconComponent, {color, size});
+
+  switch (iconName) {
+    case 'home':
+      return getIcon(HomeIcon);
+    case 'search':
+      return getIcon(SearchIcon);
+    case 'cart':
+      return getIcon(CartIcon);
+    case 'heart':
+      return getIcon(FavoritesIcon);
+    case 'person':
+      return getIcon(ProfileIcon);
+    default:
+      return null;
   }
-  return null;
 };
 
 function MyTabs() {
