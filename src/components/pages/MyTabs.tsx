@@ -66,7 +66,7 @@ function MyTabs() {
           padding: 16,
           minHeight: 56,
         },
-        headerShown: true,
+        headerShown: false,
       })}>
       <Tab.Screen
         name="Home"
